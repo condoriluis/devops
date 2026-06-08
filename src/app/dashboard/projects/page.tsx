@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import {
   Dialog,
@@ -285,7 +286,7 @@ export default function ProjectsPage() {
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                <p className="text-sm text-muted-foreground line-clamp-2 min-h-[40px]">
+                <p className="text-sm text-muted-foreground line-clamp-4 min-h-[40px]">
                   {project.description || "No description provided"}
                 </p>
               </CardContent>
@@ -331,7 +332,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="create-description">Description</Label>
-                  <Input
+                  <Textarea
                     id="create-description"
                     value={newProjectDesc}
                     onChange={(e) => setNewProjectDesc(e.target.value)}
@@ -530,7 +531,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="edit-description">Description</Label>
-                  <Input
+                  <Textarea
                     id="edit-description"
                     value={editProjectDesc}
                     onChange={(e) => setEditProjectDesc(e.target.value)}
