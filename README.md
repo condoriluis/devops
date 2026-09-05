@@ -26,9 +26,9 @@ Panel de control para centralizar y gestionar proyectos deploy.
 
 ## Instalación
 
-```bash
+bash
 npm install
-```
+
 
 ## Configuración
 
@@ -36,29 +36,29 @@ Crea un archivo `.env` basado en `.env.example` y configura tus variables de ent
 
 ## Ejecución
 
-```bash
+bash
 npm run dev
-```
+
 
 ## Build
 
-```bash
+bash
 npm run build
 npm start
-```
+
 
 ## Base de datos
 
 Migraciones y schema management con Drizzle:
 
-```bash
+bash
 npx drizzle-kit generate
 npx drizzle-kit migrate
-```
+
 
 ## Estructura del proyecto
 
-```
+
 src/
 ├── app/              # Páginas y rutas Next.js
 │   ├── (auth)/       # Rutas de autenticación
@@ -69,4 +69,9 @@ src/
 ├── db/               # Database schema y conexión
 ├── lib/              # Utilidades y acciones
 └── styles/           # Estilos globales
-```
+
+
+## Comandos
+
+bash
+pnpm dev
